@@ -1,0 +1,353 @@
+.facebook{
+    border: 1px solid blue;
+    /* padding: 10px; */
+    /* border-radius: 40%; */
+}
+.navbar{
+    background-color: #07102C;
+}
+nav ul li:hover {
+    background-color: #0D6EFD;
+    color: tomato;
+}
+/* nav .h1{
+    transition: 0.5s ease-in-out;
+} */
+/* nav .h1:hover{
+    transform: scale(1.2);
+    color: tomato;
+} */
+.icons{
+    font-size: 28px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.icons:hover{
+    transform: scale(1.2);
+}
+.icon{
+    font-size: 28px;
+
+}
+.about-me{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px; padding-bottom: 25px;
+}
+.linkedin{
+    border: 1px solid tomato;
+    border-radius: 20%;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    /* border-radius: 50%; */
+}
+.twitter{
+    border: 1px solid tomato;
+    padding: 10px;
+    border-radius: 20%;
+    transition: 0.5s ease-in-out;
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.twitter:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+footer{
+    background-color: #07102C;
+    color: white;
+    padding: 30px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icos{
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.icons:hover{
+    transform: scale(1.2);
+}
+.copy a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+.copy a{
+    text-decoration: none; color: rgba(255,255,255,0.5);
+}
+.copy{
+    padding-bottom: 20px;
+    color: rgba(255,255,255,0.5); text-align: center;
+}
+.icons{
+    font-size: 20px;
+    border: 1px solid tomato;
+    /* padding: 10px; */
+    margin-right: 20px;
+    border-radius: 50%;
+    color: #0D6EFD;
+}
+.icons:hover{
+    transform: scale(1.2);
+}
+.ic{
+    font-size: 28px;
+    color: #0D6EFD;
+}
+.ici{
+    font-size: 28px;
+    color: white;
+}
+.bod a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgs{
+    border-radius: 50%;
+}
+/* .cont {
+    columns:2;
+    column-gap: 5px;
+  }
+.bel{
+    background: #c1c1ff;
+    margin-bottom: 5px;
+    break-inside:avoid;
+  } */
+span{
+    font-size:15px;
+} 
+/* .box{
+    padding:60px 0px;
+} */
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    /* padding: 10px 10px; */
+    margin:10px 0px;
+}
+.text{
+    padding: 10px 10px;
+}
+.icc{
+    font-size: 36px;
+    color: tomato;
+}
+.iccc{
+    font-size: 50px;
+    color: tomato;
+}
+.gz{
+    border-bottom: 5px solid tomato;
+    width: fit-content;
+}
+.ff{
+    color: tomato;
+    font-size: 30px;
+}
+.mm{
+    border-bottom: 5px solid tomato;
+    width:fit-content;
+    /* background-color: red; */
+    /* text-align: center */
+}
+
+/* .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .grid-item {
+    width: 500px;
+    height: 200px;
+    float: left;
+    background: #00997B;
+    border: 1px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item--width2 { width: 600px; }
+  .grid-item--width3 { width: 520px; }
+  .grid-item--width4 { width: 780px; }
+  
+  .grid-item--height2 { height: 200px; }
+  .grid-item--height3 { height: 500px; }
+  .grid-item--height4 { height: 360px; } */
+  
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    gap: 30px;
+}
+main div {
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: 16px solid white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+main img{
+    width: fit-content;
+    /* height: 100px; */
+    transition: 0.5s ease-in-out;
+}
+main img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.tall{
+    grid-row: span 2;
+}
+@media screen and (max-width: 960px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 620px){
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main img{
+        margin: 10px auto;
+    }
+    .iccc{
+        font-size: 40px;
+    }
+    .carousel-item{
+    max-height: 408px;
+    }
+    .slider-btn{
+        margin-top: 0px;
+    }
+    /* .phonn{
+        font-size: 50px;
+        border: 3px solid tomato;
+        padding: 10px;
+        border-radius: 50%;
+        position: fixed;
+       top: 100px;
+       right: 40px;
+       z-index: 1;
+    } */
+}
+@media screen and (max-width:429px){
+    .btn.btn-2{
+        display: none;
+    }
+    .btn.btn-11{
+        display:none
+    }
+}
+@media screen and (max-width: 524px){
+    .carousel-caption p{
+        display: none;
+    }
+}
+
+.carousel-item{
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 495px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.7;
+}
+.carousel-caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel-caption h5{
+    font-size: 40px;
+}
+.carousel-caption p{
+    font-size: 18px;
+}
+/* .slider-btn{
+    margin-top: 30px;
+} */
+.slider-btn .btn{
+    background-color: tomato;
+    color: white;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+.slider-btn .btn-2 {
+    color: #FFF;
+    background-color: #0B5ED7;
+}
+.slider-btn .btn-22 {
+    color: #FFF;
+    background-color: #0B5ED7;
+}
+.coon{
+    position: relative;
+    text-align: center;
+    /* color: white; */
+}
+.bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 150px;
+
+}
+.coon:hover{
+    cursor: pointer;
+}
+.bottom-left:hover{
+    color: tomato;
+}
+.phonn{
+    position: fixed;
+    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    border: 3px solid tomato;
+    /* padding: 20px; */
+    border-radius: 50%;
+    right: 40px;
+    text-align: center;
+    z-index: 100;
+    /* background-color: red; */
+}
+.carousel-item {
+    transition: transform 2.6s ease-in-out;
+  }
+  
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2.6s;
+  }
