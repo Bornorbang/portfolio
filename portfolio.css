@@ -96,6 +96,9 @@ footer{
     border-radius: 50%;
     color: #0D6EFD;
 }
+.icooon{
+    font-size: 20px;
+}
 .icons:hover{
     transform: scale(1.2);
 }
@@ -263,12 +266,27 @@ main img:hover{
     .carousel-caption p{
         display: none;
     }
+    .carousel-item{
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 250px;
+    }
+    .bottom-left{
+        position: absolute;
+        bottom: 8px;
+        left: 100px;
+    }
+}
+@media screen and (min-width: 494px){
+    .icooon{
+        font-size: 30px;
+    }
 }
 
 .carousel-item{
     background-repeat: no-repeat;
     background-position: center;
-    max-height: 495px;
+    max-height: 500px;
 }
 .carousel-item::before{
     content: "";
@@ -288,7 +306,7 @@ main img:hover{
     flex-direction: column;
 }
 .carousel-caption h5{
-    font-size: 40px;
+    font-size: 50px;
 }
 .carousel-caption p{
     font-size: 18px;
@@ -320,7 +338,7 @@ main img:hover{
 .bottom-left{
     position: absolute;
     bottom: 8px;
-    left: 150px;
+    left: 100px;
 
 }
 .coon:hover{
